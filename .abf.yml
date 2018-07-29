@@ -1,4 +1,2 @@
-removed_sources:
-  pim-data-exporter-17.12.1.tar.xz: b290923c586f84bf05f5d110743fccd7bcf15201
 sources:
-  pim-data-exporter-18.04.3.tar.xz: 883793e8b848049c9fa8e2ece4c5c0ac5a569909
+  pim-data-exporter-18.07.80.tar.xz: ec828a41c4b536c794917a551384124059379bca
