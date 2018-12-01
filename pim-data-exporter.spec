@@ -2,7 +2,7 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	18.11.80
+Version:	18.11.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
