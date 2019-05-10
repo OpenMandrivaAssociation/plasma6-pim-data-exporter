@@ -1,0 +1,12 @@
+diff -up pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop.omv~ pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop
+--- pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop.omv~	2019-05-10 15:44:11.799372653 +0200
++++ pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop	2019-05-10 15:44:18.990314524 +0200
+@@ -90,7 +90,7 @@ Comment[x-test]=xxPIM Setting Exporter a
+ Comment[zh_CN]=个人信息管理设置导出器可以保存所有个人信息管理程序的数据并且将其在其他系统中恢复。
+ Comment[zh_TW]=PIM 設定匯出器可以將 PIM 應用程式裡的資料儲存並回復到其他系統中。
+ Terminal=false
+-Categories=Qt;KDE;Office;Network;Email;
++Categories=Qt;KDE;Office;Network;Email;X-MandrivaLinux-More;
+ X-DocPath=pimsettingexporter/index.html
+ X-DBUS-StartupType=Unique
+ X-DBUS-ServiceName=org.kde.pimsettingexporter
