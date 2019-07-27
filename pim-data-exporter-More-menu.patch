@@ -1,12 +1,12 @@
-diff -up pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop.omv~ pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop
---- pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop.omv~	2019-05-10 15:44:11.799372653 +0200
-+++ pim-data-exporter-19.04.1/gui/org.kde.pimsettingexporter.desktop	2019-05-10 15:44:18.990314524 +0200
-@@ -90,7 +90,7 @@ Comment[x-test]=xxPIM Setting Exporter a
- Comment[zh_CN]=个人信息管理设置导出器可以保存所有个人信息管理程序的数据并且将其在其他系统中恢复。
- Comment[zh_TW]=PIM 設定匯出器可以將 PIM 應用程式裡的資料儲存並回復到其他系統中。
+diff -up pim-data-exporter-19.07.80/gui/org.kde.pimdataexporter.desktop.omv~ pim-data-exporter-19.07.80/gui/org.kde.pimdataexporter.desktop
+--- pim-data-exporter-19.07.80/gui/org.kde.pimdataexporter.desktop.omv~	2019-07-27 19:20:02.340907595 +0200
++++ pim-data-exporter-19.07.80/gui/org.kde.pimdataexporter.desktop	2019-07-27 19:20:10.477861910 +0200
+@@ -44,7 +44,7 @@ Comment[sv]=Export av inställningar fö
+ Comment[uk]=За допомогою програми для експортування параметрів системи особистих даних ви зможете зберегти всі параметри програм для роботи з особистими даним, а потім відновити їх у інших системах.
+ Comment[x-test]=xxPIM Setting Exporter allows to save all data from PIM apps and restore them in other systems.xx
  Terminal=false
--Categories=Qt;KDE;Office;Network;Email;
-+Categories=Qt;KDE;Office;Network;Email;X-KDE-More;
- X-DocPath=pimsettingexporter/index.html
+-Categories=Qt;KDE;Network;Email;
++Categories=Qt;KDE;Network;Email;X-KDE-More;
+ X-DocPath=pimdataexporter/index.html
  X-DBUS-StartupType=Unique
- X-DBUS-ServiceName=org.kde.pimsettingexporter
+ X-DBUS-ServiceName=org.kde.pimdataexporter

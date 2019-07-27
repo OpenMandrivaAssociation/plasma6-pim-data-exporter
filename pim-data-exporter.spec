@@ -2,8 +2,8 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	19.04.2
-Release:	2
+Version:	19.07.80
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -43,38 +43,17 @@ BuildRequires:	pkgconfig(Qt5Xml)
 Provides:	pimsettingexporter = %{EVRD}
 Conflicts:	pimsettingexporter < 3:17.04.0
 Obsoletes:	pimsettingexporter < 3:17.04.0
+%define pimsettingexporterprivate_major 5
+%define libpimsettingexporterprivate %mklibname pimsettingexporterprivate %{pimsettingexporterprivate_major}
+Obsoletes: %{libpimsettingexporterprivate} < %{EVRD}
+
 
 %description
 PIM data exporter allows to save data from KDE PIM applications and restore
 them in other systems.
 
-%files -f pimsettingexporter.lang
-%{_kde5_applicationsdir}/org.kde.pimsettingexporter.desktop
-%{_bindir}/pimsettingexporter
-%{_bindir}/pimsettingexporterconsole
-%{_datadir}/config.kcfg/pimsettingexporterglobalconfig.kcfg
-%{_datadir}/kconf_update/pimsettingexporter*
-%{_datadir}/metainfo/org.kde.pimsettingexporter.appdata.xml
-%{_docdir}/*/*/pimsettingexporter
-%{_sysconfdir}/xdg/pimsettingexporter.categories
-%{_sysconfdir}/xdg/pimsettingexporter.renamecategories
 
 #----------------------------------------------------------------------------
-
-%define pimsettingexporterprivate_major 5
-%define libpimsettingexporterprivate %mklibname pimsettingexporterprivate %{pimsettingexporterprivate_major}
-
-%package -n %{libpimsettingexporterprivate}
-Summary:	KDE PIM shared library
-Group:		System/Libraries
-
-%description -n %{libpimsettingexporterprivate}
-KDE PIM shared library.
-
-%files -n %{libpimsettingexporterprivate}
-%{_libdir}/libpimsettingexporterprivate.so.%{pimsettingexporterprivate_major}*
-
-#----------------------------------------------------------------------
 
 %prep
 %autosetup -p1
@@ -85,5 +64,17 @@ KDE PIM shared library.
 
 %install
 %ninja_install -C build
+%find_lang pimdataexporter --with-html
 
-%find_lang pimsettingexporter
+%files -f pimdataexporter.lang
+%{_datadir}/metainfo/org.kde.pimdataexporter.appdata.xml
+%{_datadir}/qlogging-categories5/pimdataexporter.categories
+%{_datadir}/qlogging-categories5/pimdataexporter.renamecategories
+%{_bindir}/pimdataexporter
+%{_bindir}/pimdataexporterconsole
+%{_libdir}/libpimdataexporterprivate.so.*
+%{_datadir}/applications/org.kde.pimdataexporter.desktop
+%{_datadir}/config.kcfg/pimdataexporterglobalconfig.kcfg
+%{_datadir}/kconf_update/pimsettingexporter-15.08-kickoff.sh
+%{_datadir}/kconf_update/pimsettingexporter.upd
+
