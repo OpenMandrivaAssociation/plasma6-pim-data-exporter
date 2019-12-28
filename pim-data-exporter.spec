@@ -2,13 +2,13 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Patch0:		pim-data-exporter-More-menu.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Archive)
