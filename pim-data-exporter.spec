@@ -2,7 +2,7 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	20.04.1
+Version:	20.04.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -66,7 +66,7 @@ them in other systems.
 
 %install
 %ninja_install -C build
-%find_lang pimdataexporter --with-html
+%find_lang pimdataexporter --with-html --all-name
 
 %files -f pimdataexporter.lang
 %{_datadir}/metainfo/org.kde.pimdataexporter.appdata.xml
