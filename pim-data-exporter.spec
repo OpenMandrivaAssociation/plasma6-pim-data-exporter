@@ -3,7 +3,7 @@
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
 Version:	20.04.2
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -34,6 +34,7 @@ BuildRequires:	cmake(KF5PimCommonAkonadi)
 BuildRequires:	cmake(KF5PimTextEdit)
 BuildRequires:	cmake(KF5CalendarCore)
 BuildRequires:	cmake(KF5AkonadiNotes)
+BuildRequires:	cmake(KUserFeedback)
 BuildRequires:	cmake(QGpgme)
 BuildRequires:	cmake(Gpgmepp)
 BuildRequires:	boost-devel
