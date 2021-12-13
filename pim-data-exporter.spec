@@ -2,7 +2,7 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -78,6 +78,4 @@ them in other systems.
 %{_libdir}/libpimdataexporterprivate.so.*
 %{_datadir}/applications/org.kde.pimdataexporter.desktop
 %{_datadir}/config.kcfg/pimdataexporterglobalconfig.kcfg
-%{_datadir}/kconf_update/pimsettingexporter-15.08-kickoff.sh
-%{_datadir}/kconf_update/pimsettingexporter.upd
 
