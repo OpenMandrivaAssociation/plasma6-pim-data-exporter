@@ -2,7 +2,7 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -23,17 +23,17 @@ BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5XmlGui)
-BuildRequires:	cmake(KF5Akonadi)
+BuildRequires:	cmake(KPim5Akonadi)
 BuildRequires:	cmake(KF5Contacts)
-BuildRequires:	cmake(KF5IdentityManagement)
-BuildRequires:	cmake(KF5Libkdepim)
-BuildRequires:	cmake(KF5MailCommon)
-BuildRequires:	cmake(KF5MailTransport)
-BuildRequires:	cmake(KF5Mime)
-BuildRequires:	cmake(KF5PimCommonAkonadi)
+BuildRequires:	cmake(KPim5IdentityManagement)
+BuildRequires:	cmake(KPim5Libkdepim)
+BuildRequires:	cmake(KPim5MailCommon)
+BuildRequires:	cmake(KPim5MailTransport)
+BuildRequires:	cmake(KPim5Mime)
+BuildRequires:	cmake(KPim5PimCommonAkonadi)
 BuildRequires:	cmake(KF5PimTextEdit)
 BuildRequires:	cmake(KF5CalendarCore)
-BuildRequires:	cmake(KF5AkonadiNotes)
+BuildRequires:	cmake(KPim5AkonadiNotes)
 BuildRequires:	cmake(KUserFeedback)
 BuildRequires:	cmake(QGpgme)
 BuildRequires:	cmake(Gpgmepp)
