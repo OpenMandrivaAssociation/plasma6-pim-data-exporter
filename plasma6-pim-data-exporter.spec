@@ -44,6 +44,7 @@ BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(Qt6Xml)
+BuildRequires:	%mklibname -d KF6UserFeedbackWidgets
 %define pimsettingexporterprivate_major 6
 %define libpimsettingexporterprivate %mklibname pimsettingexporterprivate %{pimsettingexporterprivate_major}
 Obsoletes: %{libpimsettingexporterprivate} < %{EVRD}
