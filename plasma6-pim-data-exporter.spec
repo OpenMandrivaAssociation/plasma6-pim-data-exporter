@@ -34,6 +34,7 @@ BuildRequires:	cmake(KPim6TextEdit)
 BuildRequires:	cmake(KF6CalendarCore)
 BuildRequires:	cmake(KPim6AkonadiNotes)
 BuildRequires:	cmake(KF6UserFeedback)
+BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(QGpgme)
 BuildRequires:	cmake(Gpgmepp)
 BuildRequires:	boost-devel
