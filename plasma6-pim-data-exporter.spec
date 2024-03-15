@@ -6,7 +6,7 @@
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		plasma6-pim-data-exporter
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
