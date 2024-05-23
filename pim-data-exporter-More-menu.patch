@@ -1,12 +1,12 @@
-diff -up pim-data-exporter-24.01.90/gui/org.kde.pimdataexporter.desktop.1~ pim-data-exporter-24.01.90/gui/org.kde.pimdataexporter.desktop
---- pim-data-exporter-24.01.90/gui/org.kde.pimdataexporter.desktop.1~	2024-01-12 04:56:27.449651137 +0100
-+++ pim-data-exporter-24.01.90/gui/org.kde.pimdataexporter.desktop	2024-01-12 04:57:49.130393545 +0100
-@@ -116,7 +116,7 @@ Comment[uk]=За допомогою пр
+diff -up pim-data-exporter-24.05.0/gui/org.kde.pimdataexporter.desktop.1~ pim-data-exporter-24.05.0/gui/org.kde.pimdataexporter.desktop
+--- pim-data-exporter-24.05.0/gui/org.kde.pimdataexporter.desktop.1~	2024-05-23 22:30:55.565717931 +0200
++++ pim-data-exporter-24.05.0/gui/org.kde.pimdataexporter.desktop	2024-05-23 22:37:48.601938854 +0200
+@@ -119,7 +119,7 @@ Comment[uk]=За допомогою пр
  Comment[x-test]=xxPIM Setting Exporter allows to save all data from PIM apps and restore them in other systems.xx
  Comment[zh_CN]=个人信息管理设置导出器可以保存所有个人信息管理程序的数据并且将其在其他系统中恢复。
  Comment[zh_TW]=PIM 資料匯出工具可以將 PIM 應用程式裡的資料儲存並回復到其他系統中。
 -Categories=Qt;KDE;Network;Email;
 +Categories=Qt;KDE;Network;Email;X-KDE-More;
  X-DocPath=pimdataexporter/index.html
- X-DBUS-StartupType=Unique
- X-DBUS-ServiceName=org.kde.pimdataexporter
+ SingleMainWindow=true
+ Version=1.5
