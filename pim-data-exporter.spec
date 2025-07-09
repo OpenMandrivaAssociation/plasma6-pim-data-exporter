@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
-Name:		plasma6-pim-data-exporter
+Name:		pim-data-exporter
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
