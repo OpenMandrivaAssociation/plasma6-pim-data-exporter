@@ -5,7 +5,7 @@
 
 Summary:	Allows to save data from KDE PIM applications and restore them in other systems
 Name:		pim-data-exporter
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -56,28 +56,16 @@ BuildRequires:	%mklibname -d KF6UserFeedbackWidgets
 %define libpimsettingexporterprivate %mklibname pimsettingexporterprivate %{pimsettingexporterprivate_major}
 Obsoletes: %{libpimsettingexporterprivate} < %{EVRD}
 
+%rename plasma6-pim-data-exporter
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 PIM data exporter allows to save data from KDE PIM applications and restore
 them in other systems.
 
-
-#----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n pim-data-exporter-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang pimdataexporter --with-html --all-name
-
-%files -f pimdataexporter.lang
+%files -f %{name}.lang
 %{_datadir}/metainfo/org.kde.pimdataexporter.appdata.xml
 %{_datadir}/qlogging-categories6/pimdataexporter.categories
 %{_datadir}/qlogging-categories6/pimdataexporter.renamecategories
@@ -86,4 +74,3 @@ them in other systems.
 %{_libdir}/libpimdataexporterprivate.so.*
 %{_datadir}/applications/org.kde.pimdataexporter.desktop
 %{_datadir}/config.kcfg/pimdataexporterglobalconfig.kcfg
-
